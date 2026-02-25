@@ -19,6 +19,7 @@ RUN echo "当前 USE_CHINA_MIRROR 的值为: ${USE_CHINA_MIRROR}" && \
     fi
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
     git \
 	dbus-x11 \
     ninja-build \
